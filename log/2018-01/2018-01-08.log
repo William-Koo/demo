@@ -1,0 +1,52 @@
+2018-01-08 20:32:09,344 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 35307 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2018-01-08 20:32:09,360 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: local 
+2018-01-08 20:32:12,622 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [34] -| -----------------监听器初始化----------------- 
+2018-01-08 20:32:12,625 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [41] -| JDK 版本: 1.8.0_152 
+2018-01-08 20:32:12,625 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [42] -| 项目部署路径: /Users/guxiaqing/Documents/ideaDir/demo/ 
+2018-01-08 20:32:12,626 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [43] -| 当前操作系统: Mac OS X 10.13.2 
+2018-01-08 20:32:12,626 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [44] -| 当前进程号: 35307 
+2018-01-08 20:32:12,677 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [51] -| {"filterDef":{"filterClass":"com.example.component.CrossFilter","filterName":"crossFilter","parameters":{},"asyncSupported":"true"}} 
+2018-01-08 20:32:12,677 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [52] -| *********************************过滤器初始化************************** 
+2018-01-08 20:32:12,732 | INFO  [restartedMain] com.example.datasource.MysqlConfig [52] -| 获取 mysql 数据源 
+2018-01-08 20:32:13,298 | INFO  [restartedMain] com.example.datasource.OracleConfig [49] -| 获取 oracle 数据源 
+2018-01-08 20:32:14,771 | INFO  [restartedMain] com.example.Application [57] -| Started Application in 6.306 seconds (JVM running for 8.349) 
+2018-01-08 20:32:50,255 | INFO  [http-nio-8081-exec-1] com.example.component.CrossFilter [59] -| *********************************过滤器被使用************************** 
+2018-01-08 20:32:50,291 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [52] -| 请求url: http://localhost:8081/userController/jsonp/test123 
+2018-01-08 20:32:50,293 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [53] -| 方法类型: GET 
+2018-01-08 20:32:50,294 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [54] -| ip: 0:0:0:0:0:0:0:1 
+2018-01-08 20:32:50,295 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [55] -| 请求方法名: com.example.controller.UserController.jsonp 
+2018-01-08 20:32:50,295 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [63] -| 请求入参: test123  
+2018-01-08 20:32:51,444 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [69] -| 返回值：test123([{"SUCCESS":2,"USER#":1,"OPTION#":42,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":41,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":44,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":141,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":143,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":142,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":167,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":244,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":127,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":4,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":280,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":265,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":189,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":120,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":235,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":22,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":20,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":33,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":5,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":23,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":135,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":3,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":161,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":162,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":28,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":37,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":25,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":131,"FAILURE":2}]) 
+2018-01-08 20:32:51,444 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [79] -| 程序执行时间：1157 
+2018-01-08 20:40:31,972 | INFO  [localhost-startStop-2] com.example.component.CrossFilter [77] -| *********************************过滤器被销毁************************** 
+2018-01-08 20:40:31,974 | INFO  [localhost-startStop-2] com.example.component.GlobalListener [51] -| -----------------监听器销毁----------------- 
+2018-01-08 20:59:24,538 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 35383 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2018-01-08 20:59:24,557 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: local 
+2018-01-08 20:59:27,280 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [34] -| -----------------监听器初始化----------------- 
+2018-01-08 20:59:27,283 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [41] -| JDK 版本: 1.8.0_152 
+2018-01-08 20:59:27,283 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [42] -| 项目部署路径: /Users/guxiaqing/Documents/ideaDir/demo/ 
+2018-01-08 20:59:27,283 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [43] -| 当前操作系统: Mac OS X 10.13.2 
+2018-01-08 20:59:27,284 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [44] -| 当前进程号: 35383 
+2018-01-08 20:59:27,331 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [51] -| {"filterDef":{"filterClass":"com.example.component.CrossFilter","filterName":"crossFilter","parameters":{},"asyncSupported":"true"}} 
+2018-01-08 20:59:27,331 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [52] -| *********************************过滤器初始化************************** 
+2018-01-08 20:59:27,379 | INFO  [restartedMain] com.example.datasource.MysqlConfig [69] -| 创建 mysql 数据源 
+2018-01-08 20:59:27,809 | INFO  [restartedMain] com.example.datasource.OracleConfig [66] -| 创建 oracle 数据源 
+2018-01-08 20:59:29,290 | INFO  [restartedMain] com.example.Application [57] -| Started Application in 5.607 seconds (JVM running for 7.065) 
+2018-01-08 20:59:34,237 | INFO  [http-nio-8081-exec-2] com.example.component.CrossFilter [59] -| *********************************过滤器被使用************************** 
+2018-01-08 20:59:34,273 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [52] -| 请求url: http://localhost:8081/userController/jsonp/test123 
+2018-01-08 20:59:34,275 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [53] -| 方法类型: GET 
+2018-01-08 20:59:34,276 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [54] -| ip: 0:0:0:0:0:0:0:1 
+2018-01-08 20:59:34,278 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [55] -| 请求方法名: com.example.controller.UserController.jsonp 
+2018-01-08 20:59:34,278 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [63] -| 请求入参: test123  
+2018-01-08 20:59:35,377 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [69] -| 返回值：test123([{"SUCCESS":2,"USER#":1,"OPTION#":42,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":41,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":44,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":141,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":143,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":142,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":167,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":244,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":127,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":4,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":280,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":265,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":189,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":120,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":235,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":22,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":20,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":33,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":5,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":23,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":135,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":3,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":161,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":162,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":28,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":37,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":25,"FAILURE":2},{"SUCCESS":2,"USER#":1,"OPTION#":131,"FAILURE":2}]) 
+2018-01-08 20:59:35,378 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [79] -| 程序执行时间：1109 
+2018-01-08 20:59:40,010 | INFO  [http-nio-8081-exec-3] com.example.component.CrossFilter [59] -| *********************************过滤器被使用************************** 
+2018-01-08 20:59:40,011 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [52] -| 请求url: http://localhost:8081/userController/user 
+2018-01-08 20:59:40,012 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [53] -| 方法类型: GET 
+2018-01-08 20:59:40,013 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [54] -| ip: 0:0:0:0:0:0:0:1 
+2018-01-08 20:59:40,018 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [55] -| 请求方法名: com.example.controller.UserController.getUser 
+2018-01-08 20:59:40,019 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [63] -| 请求入参:  
+2018-01-08 20:59:40,106 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [69] -| 返回值：{"err_info":"查询用户列表成功","err_no":0,"data":[{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0}]} 
+2018-01-08 20:59:40,106 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [79] -| 程序执行时间：95 
+2018-01-08 21:00:13,478 | INFO  [localhost-startStop-2] com.example.component.CrossFilter [77] -| *********************************过滤器被销毁************************** 
+2018-01-08 21:00:13,481 | INFO  [localhost-startStop-2] com.example.component.GlobalListener [51] -| -----------------监听器销毁----------------- 

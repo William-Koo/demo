@@ -1,0 +1,110 @@
+2018-02-11 14:36:14,047 | INFO  [main] com.example.controller.TestUserController [48] -| Starting TestUserController on William.local with PID 16348 (started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2018-02-11 14:36:14,080 | INFO  [main] com.example.controller.TestUserController [597] -| The following profiles are active: local 
+2018-02-11 14:36:16,045 | INFO  [main] com.example.datasource.MysqlConfig [68] -| 创建 mysql 数据源 
+2018-02-11 14:36:16,791 | INFO  [main] com.example.datasource.OracleConfig [66] -| 创建 oracle 数据源 
+2018-02-11 14:36:19,269 | INFO  [main] com.example.controller.TestUserController [57] -| Started TestUserController in 6.348 seconds (JVM running for 7.983) 
+2018-02-11 14:36:19,333 | ERROR [main] org.springframework.test.context.TestContextManager [234] -| Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@365c30cc] to prepare test instance [com.example.controller.TestUserController@6f8667bb] 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.example.controller.TestUserController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'server.uri-encoding' in value "${server.uri-encoding}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:386)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'server.uri-encoding' in value "${server.uri-encoding}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 26 common frames omitted
+2018-02-11 14:37:19,651 | INFO  [main] com.example.controller.TestUserController [48] -| Starting TestUserController on William.local with PID 16353 (started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2018-02-11 14:37:19,684 | INFO  [main] com.example.controller.TestUserController [597] -| The following profiles are active: local 
+2018-02-11 14:37:22,535 | INFO  [main] com.example.datasource.MysqlConfig [68] -| 创建 mysql 数据源 
+2018-02-11 14:37:23,171 | INFO  [main] com.example.datasource.OracleConfig [66] -| 创建 oracle 数据源 
+2018-02-11 14:37:25,438 | INFO  [main] com.example.controller.TestUserController [57] -| Started TestUserController in 6.754 seconds (JVM running for 8.069) 
+2018-02-11 14:37:25,491 | ERROR [main] org.springframework.test.context.TestContextManager [234] -| Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@365c30cc] to prepare test instance [com.example.controller.TestUserController@99c4993] 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.example.controller.TestUserController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'server.uri-encoding' in value "${server.uri-encoding}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:386)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'server.uri-encoding' in value "${server.uri-encoding}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 26 common frames omitted
+2018-02-11 14:40:13,634 | INFO  [main] com.example.controller.TestUserController [48] -| Starting TestUserController on William.local with PID 16463 (started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2018-02-11 14:40:13,650 | INFO  [main] com.example.controller.TestUserController [597] -| The following profiles are active: local 
+2018-02-11 14:40:15,699 | INFO  [main] com.example.datasource.MysqlConfig [68] -| 创建 mysql 数据源 
+2018-02-11 14:40:16,306 | INFO  [main] com.example.datasource.OracleConfig [66] -| 创建 oracle 数据源 
+2018-02-11 14:40:18,367 | INFO  [main] com.example.controller.TestUserController [57] -| Started TestUserController in 5.803 seconds (JVM running for 6.879) 
+2018-02-11 14:40:18,448 | INFO  [main] com.example.test.BaseTest [64] -| 端口号:-1 
+2018-02-11 14:40:18,449 | INFO  [main] com.example.test.BaseTest [65] -| 当前使用配置文件:utf-8 
+2018-02-11 14:40:18,524 | INFO  [main] com.example.component.MethodAspect [59] -| 请求url: http://127.0.0.1:8081/userController/user/ 
+2018-02-11 14:40:18,529 | INFO  [main] com.example.component.MethodAspect [60] -| 方法类型: GET 
+2018-02-11 14:40:18,529 | INFO  [main] com.example.component.MethodAspect [61] -| ip: 127.0.0.1 
+2018-02-11 14:40:18,530 | INFO  [main] com.example.component.MethodAspect [62] -| 请求方法名: com.example.controller.UserController.getUser 
+2018-02-11 14:40:18,530 | INFO  [main] com.example.component.MethodAspect [70] -| 请求入参:  
+2018-02-11 14:40:19,167 | INFO  [main] com.example.component.MethodAspect [76] -| 返回值：{"err_info":"查询用户列表成功","err_no":0,"data":[{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0}]} 
+2018-02-11 14:40:19,168 | INFO  [main] com.example.component.MethodAspect [86] -| 程序执行时间：645 
+2018-02-11 14:40:19,182 | INFO  [main] com.example.test.BaseTest [111] -| 请求状态: 200 
+2018-02-11 14:40:19,182 | INFO  [main] com.example.test.BaseTest [112] -| 返回结果: {"err_info":"查询用户列表成功","err_no":0,"data":[{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0}]} 

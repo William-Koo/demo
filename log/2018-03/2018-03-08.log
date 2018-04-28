@@ -1,0 +1,12 @@
+2018-03-08 10:11:28,658 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 30195 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2018-03-08 10:11:28,679 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: local 
+2018-03-08 10:11:31,500 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [34] -| -----------------监听器初始化----------------- 
+2018-03-08 10:11:31,502 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [41] -| JDK 版本: 1.8.0_152 
+2018-03-08 10:11:31,502 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [42] -| 项目部署路径: /Users/guxiaqing/Documents/ideaDir/demo/ 
+2018-03-08 10:11:31,503 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [43] -| 当前操作系统: Mac OS X 10.13.3 
+2018-03-08 10:11:31,503 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [44] -| 当前进程号: 30195 
+2018-03-08 10:11:31,618 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [47] -| {"filterDef":{"filterClass":"com.example.component.CrossFilter","filterName":"crossFilter","parameters":{},"asyncSupported":"true"}} 
+2018-03-08 10:11:31,618 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [48] -| *********************************过滤器初始化************************** 
+2018-03-08 10:11:31,803 | INFO  [restartedMain] com.example.datasource.MysqlConfig [68] -| 创建 mysql 数据源 
+2018-03-08 10:11:32,779 | INFO  [restartedMain] com.example.datasource.OracleConfig [66] -| 创建 oracle 数据源 
+2018-03-08 10:11:34,295 | INFO  [restartedMain] com.example.Application [57] -| Started Application in 6.275 seconds (JVM running for 8.319) 

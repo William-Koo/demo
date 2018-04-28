@@ -1,0 +1,434 @@
+2017-12-17 11:47:58,442 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 932 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2017-12-17 11:47:58,459 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: mysql 
+2017-12-17 16:17:30,704 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 1900 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2017-12-17 16:17:30,721 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: mysql 
+2017-12-17 16:17:33,411 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [32] -| -----------------监听器初始化----------------- 
+2017-12-17 16:17:33,411 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [35] -| webAppPath:/Users/guxiaqing/Documents/ideaDir/demo 
+2017-12-17 16:17:33,414 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [44] -| user.dir: /Users/guxiaqing/Documents/ideaDir/demo 
+2017-12-17 16:17:33,416 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [45] -| os.name: Mac OS X 10.13.2 
+2017-12-17 16:17:33,416 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [46] -| PID: 1900 
+2017-12-17 16:17:33,416 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [47] -| java.version: 1.8.0_152 
+2017-12-17 16:17:33,463 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [47] -| {"filterDef":{"filterClass":"com.example.component.CrossFilter","filterName":"crossFilter","parameters":{},"asyncSupported":"true"}} 
+2017-12-17 16:17:33,463 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [48] -| *********************************过滤器初始化************************** 
+2017-12-17 16:17:35,290 | INFO  [restartedMain] com.example.Application [57] -| Started Application in 5.131 seconds (JVM running for 7.556) 
+2017-12-17 16:18:04,558 | INFO  [localhost-startStop-2] com.example.component.CrossFilter [72] -| *********************************过滤器被销毁************************** 
+2017-12-17 16:18:04,560 | INFO  [localhost-startStop-2] com.example.component.GlobalListener [53] -| -----------------监听器销毁----------------- 
+2017-12-17 16:20:10,355 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 2112 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2017-12-17 16:20:10,370 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: mysql 
+2017-12-17 16:20:12,547 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [32] -| -----------------监听器初始化----------------- 
+2017-12-17 16:20:12,548 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [35] -| webAppPath:/Users/guxiaqing/Documents/ideaDir/demo/ 
+2017-12-17 16:20:12,549 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [44] -| 项目部署路径: /Users/guxiaqing/Documents/ideaDir/demo 
+2017-12-17 16:20:12,550 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [45] -| 当前操作系统: Mac OS X 10.13.2 
+2017-12-17 16:20:12,550 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [46] -| 当前进程号: 2112 
+2017-12-17 16:20:12,550 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [47] -| JDK 版本: 1.8.0_152 
+2017-12-17 16:20:12,586 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [47] -| {"filterDef":{"filterClass":"com.example.component.CrossFilter","filterName":"crossFilter","parameters":{},"asyncSupported":"true"}} 
+2017-12-17 16:20:12,586 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [48] -| *********************************过滤器初始化************************** 
+2017-12-17 16:20:14,154 | INFO  [restartedMain] com.example.Application [57] -| Started Application in 4.344 seconds (JVM running for 5.67) 
+2017-12-17 16:24:48,438 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 2126 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2017-12-17 16:24:48,458 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: mysql 
+2017-12-17 16:24:51,028 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [32] -| -----------------监听器初始化----------------- 
+2017-12-17 16:24:51,034 | ERROR [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [181] -| Exception sending context initialized event to listener instance of class [com.example.component.GlobalListener] 
+java.lang.NullPointerException: null
+	at com.example.util.ContextHolderUtils.getRequest(ContextHolderUtils.java:26)
+	at com.example.util.ContextHolderUtils.getSession(ContextHolderUtils.java:36)
+	at com.example.component.GlobalListener.contextInitialized(GlobalListener.java:35)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4743)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1419)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1409)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-17 16:24:51,034 | ERROR [localhost-startStop-1] org.apache.catalina.core.StandardContext [179] -| One or more listeners failed to start. Full details will be found in the appropriate container log file 
+2017-12-17 16:24:51,035 | ERROR [localhost-startStop-1] org.apache.catalina.core.StandardContext [179] -| Context [] startup failed due to previous errors 
+2017-12-17 16:24:51,037 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [51] -| -----------------监听器销毁----------------- 
+2017-12-17 16:24:51,067 | WARN  [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoaderBase [179] -| The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43) 
+2017-12-17 16:24:51,072 | WARN  [restartedMain] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [551] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat 
+2017-12-17 16:24:51,086 | ERROR [restartedMain] org.springframework.boot.SpringApplication [771] -| Application startup failed 
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.example.Application.main(Application.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:123)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:84)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:554)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:179)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:164)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 13 common frames omitted
+Caused by: java.lang.IllegalStateException: StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[] failed to start
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.rethrowDeferredStartupExceptions(TomcatEmbeddedServletContainer.java:167)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:102)
+	... 18 common frames omitted
+2017-12-17 21:15:46,894 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 2767 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2017-12-17 21:15:46,912 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: mysql 
+2017-12-17 21:15:49,418 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [32] -| -----------------监听器初始化----------------- 
+2017-12-17 21:15:49,420 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [40] -| 项目部署路径: /Users/guxiaqing/Documents/ideaDir/demo 
+2017-12-17 21:15:49,420 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [41] -| 当前操作系统: Mac OS X 10.13.2 
+2017-12-17 21:15:49,420 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [42] -| 当前进程号: 2767 
+2017-12-17 21:15:49,421 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [43] -| JDK 版本: 1.8.0_152 
+2017-12-17 21:15:49,469 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [47] -| {"filterDef":{"filterClass":"com.example.component.CrossFilter","filterName":"crossFilter","parameters":{},"asyncSupported":"true"}} 
+2017-12-17 21:15:49,469 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [48] -| *********************************过滤器初始化************************** 
+2017-12-17 21:15:51,143 | INFO  [restartedMain] com.example.Application [57] -| Started Application in 4.954 seconds (JVM running for 6.066) 
+2017-12-17 21:18:02,241 | INFO  [http-nio-8081-exec-2] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:18:02,274 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/jsonp/test123 
+2017-12-17 21:18:02,276 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [56] -| 方法类型:GET 
+2017-12-17 21:18:02,277 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:18:02,277 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.jsonp 
+2017-12-17 21:18:02,277 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [66] -| 请求入参:test123  
+2017-12-17 21:18:02,591 | ERROR [http-nio-8081-exec-2] com.example.component.MethodAspect [76] -| 调用方法异常： 
+java.lang.ClassCastException: com.fasterxml.jackson.databind.util.JSONPObject cannot be cast to com.example.util.Result
+	at com.example.component.MethodAspect.around(MethodAspect.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.example.controller.UserController$$EnhancerBySpringCGLIB$$5c125cc3.jsonp(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.component.CrossFilter.doFilter(CrossFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-17 21:18:02,592 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [81] -| 程序执行时间：321 
+2017-12-17 21:22:17,948 | INFO  [localhost-startStop-2] com.example.component.CrossFilter [72] -| *********************************过滤器被销毁************************** 
+2017-12-17 21:22:17,950 | INFO  [localhost-startStop-2] com.example.component.GlobalListener [49] -| -----------------监听器销毁----------------- 
+2017-12-17 21:27:57,816 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 2944 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2017-12-17 21:27:57,850 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: mysql 
+2017-12-17 21:28:01,364 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [32] -| -----------------监听器初始化----------------- 
+2017-12-17 21:28:01,367 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [40] -| 项目部署路径: /Users/guxiaqing/Documents/ideaDir/demo/ 
+2017-12-17 21:28:01,368 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [41] -| 当前操作系统: Mac OS X 10.13.2 
+2017-12-17 21:28:01,368 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [42] -| 当前进程号: 2944 
+2017-12-17 21:28:01,368 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [43] -| JDK 版本: 1.8.0_152 
+2017-12-17 21:28:01,417 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [47] -| {"filterDef":{"filterClass":"com.example.component.CrossFilter","filterName":"crossFilter","parameters":{},"asyncSupported":"true"}} 
+2017-12-17 21:28:01,417 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [48] -| *********************************过滤器初始化************************** 
+2017-12-17 21:28:03,703 | INFO  [restartedMain] com.example.Application [57] -| Started Application in 6.95 seconds (JVM running for 8.59) 
+2017-12-17 21:28:08,810 | INFO  [http-nio-8081-exec-2] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:28:08,849 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/jsonp/test123 
+2017-12-17 21:28:08,852 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [56] -| 方法类型:GET 
+2017-12-17 21:28:08,852 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:28:08,853 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.jsonp 
+2017-12-17 21:28:08,854 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [66] -| 请求入参:test123  
+2017-12-17 21:28:09,287 | ERROR [http-nio-8081-exec-2] com.example.component.MethodAspect [76] -| 调用方法异常： 
+java.lang.ClassCastException: com.fasterxml.jackson.databind.util.JSONPObject cannot be cast to com.example.util.Result
+	at com.example.component.MethodAspect.around(MethodAspect.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.example.controller.UserController$$EnhancerBySpringCGLIB$$81242231.jsonp(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.component.CrossFilter.doFilter(CrossFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-17 21:28:09,288 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [81] -| 程序执行时间：441 
+2017-12-17 21:30:35,537 | INFO  [localhost-startStop-2] com.example.component.CrossFilter [72] -| *********************************过滤器被销毁************************** 
+2017-12-17 21:30:35,540 | INFO  [localhost-startStop-2] com.example.component.GlobalListener [49] -| -----------------监听器销毁----------------- 
+2017-12-17 21:31:33,648 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 2964 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2017-12-17 21:31:33,665 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: mysql 
+2017-12-17 21:31:36,884 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [32] -| -----------------监听器初始化----------------- 
+2017-12-17 21:31:36,887 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [40] -| 项目部署路径: /Users/guxiaqing/Documents/ideaDir/demo/ 
+2017-12-17 21:31:36,887 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [41] -| 当前操作系统: Mac OS X 10.13.2 
+2017-12-17 21:31:36,887 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [42] -| 当前进程号: 2964 
+2017-12-17 21:31:36,888 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [43] -| JDK 版本: 1.8.0_152 
+2017-12-17 21:31:36,933 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [47] -| {"filterDef":{"filterClass":"com.example.component.CrossFilter","filterName":"crossFilter","parameters":{},"asyncSupported":"true"}} 
+2017-12-17 21:31:36,934 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [48] -| *********************************过滤器初始化************************** 
+2017-12-17 21:31:39,524 | INFO  [restartedMain] com.example.Application [57] -| Started Application in 6.776 seconds (JVM running for 8.206) 
+2017-12-17 21:31:48,054 | INFO  [http-nio-8081-exec-2] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:31:48,082 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/jsonp/test123 
+2017-12-17 21:31:48,084 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [56] -| 方法类型:GET 
+2017-12-17 21:31:48,084 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:31:48,085 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.jsonp 
+2017-12-17 21:31:48,085 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [66] -| 请求入参:test123  
+2017-12-17 21:31:48,549 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [72] -| 返回值：test123([{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0},{"id":"h6spYYz1Au6C93pOVs9O","name":"测试数据","birthday":"2011-01-01","money":12000.0},{"id":"i5675ch3fvd1zq2VRo30","name":"坎坎坷坷扩","birthday":"2017-11-19","money":145678.0},{"id":"OHW3Q3fvC5KyFUjN6U5G","name":"测试数据","birthday":"2011-01-01","money":12000.0}]) 
+2017-12-17 21:31:48,550 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [81] -| 程序执行时间：471 
+2017-12-17 21:32:56,759 | INFO  [http-nio-8081-exec-5] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:32:56,761 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/jsonp/test123 
+2017-12-17 21:32:56,761 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [56] -| 方法类型:GET 
+2017-12-17 21:32:56,762 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:32:56,762 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.jsonp 
+2017-12-17 21:32:56,762 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [66] -| 请求入参:test123  
+2017-12-17 21:33:20,528 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [72] -| 返回值：test123([{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0},{"id":"h6spYYz1Au6C93pOVs9O","name":"测试数据","birthday":"2011-01-01","money":12000.0},{"id":"i5675ch3fvd1zq2VRo30","name":"坎坎坷坷扩","birthday":"2017-11-19","money":145678.0},{"id":"OHW3Q3fvC5KyFUjN6U5G","name":"测试数据","birthday":"2011-01-01","money":12000.0}]) 
+2017-12-17 21:33:20,529 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [81] -| 程序执行时间：23768 
+2017-12-17 21:33:44,775 | INFO  [localhost-startStop-2] com.example.component.CrossFilter [72] -| *********************************过滤器被销毁************************** 
+2017-12-17 21:33:44,778 | INFO  [localhost-startStop-2] com.example.component.GlobalListener [49] -| -----------------监听器销毁----------------- 
+2017-12-17 21:33:50,162 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 2973 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2017-12-17 21:33:50,178 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: mysql 
+2017-12-17 21:33:53,595 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [32] -| -----------------监听器初始化----------------- 
+2017-12-17 21:33:53,597 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [40] -| 项目部署路径: /Users/guxiaqing/Documents/ideaDir/demo/ 
+2017-12-17 21:33:53,598 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [41] -| 当前操作系统: Mac OS X 10.13.2 
+2017-12-17 21:33:53,598 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [42] -| 当前进程号: 2973 
+2017-12-17 21:33:53,598 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [43] -| JDK 版本: 1.8.0_152 
+2017-12-17 21:33:53,632 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [47] -| {"filterDef":{"filterClass":"com.example.component.CrossFilter","filterName":"crossFilter","parameters":{},"asyncSupported":"true"}} 
+2017-12-17 21:33:53,632 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [48] -| *********************************过滤器初始化************************** 
+2017-12-17 21:33:56,479 | INFO  [restartedMain] com.example.Application [57] -| Started Application in 7.033 seconds (JVM running for 8.269) 
+2017-12-17 21:33:59,631 | INFO  [http-nio-8081-exec-2] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:33:59,667 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/jsonp/test123 
+2017-12-17 21:33:59,669 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [56] -| 方法类型:GET 
+2017-12-17 21:33:59,670 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:33:59,670 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.jsonp 
+2017-12-17 21:33:59,671 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [66] -| 请求入参:test123  
+2017-12-17 21:34:00,137 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [72] -| 返回值：test123([{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0},{"id":"h6spYYz1Au6C93pOVs9O","name":"测试数据","birthday":"2011-01-01","money":12000.0},{"id":"i5675ch3fvd1zq2VRo30","name":"坎坎坷坷扩","birthday":"2017-11-19","money":145678.0},{"id":"OHW3Q3fvC5KyFUjN6U5G","name":"测试数据","birthday":"2011-01-01","money":12000.0}]) 
+2017-12-17 21:34:00,138 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [81] -| 程序执行时间：473 
+2017-12-17 21:34:48,339 | INFO  [http-nio-8081-exec-3] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:34:48,340 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/user 
+2017-12-17 21:34:48,341 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [56] -| 方法类型:GET 
+2017-12-17 21:34:48,342 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:34:48,342 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.getUser 
+2017-12-17 21:34:48,342 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [66] -| 请求入参: 
+2017-12-17 21:34:48,350 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [72] -| 返回值：{"err_info":"查询用户列表成功","err_no":0,"data":[{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0},{"id":"h6spYYz1Au6C93pOVs9O","name":"测试数据","birthday":"2011-01-01","money":12000.0},{"id":"i5675ch3fvd1zq2VRo30","name":"坎坎坷坷扩","birthday":"2017-11-19","money":145678.0},{"id":"OHW3Q3fvC5KyFUjN6U5G","name":"测试数据","birthday":"2011-01-01","money":12000.0}]} 
+2017-12-17 21:34:48,351 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [81] -| 程序执行时间：11 
+2017-12-17 21:35:20,724 | INFO  [http-nio-8081-exec-4] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:35:20,726 | INFO  [http-nio-8081-exec-4] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/user/OHW3Q3fvC5KyFUjN6U5G 
+2017-12-17 21:35:20,727 | INFO  [http-nio-8081-exec-4] com.example.component.MethodAspect [56] -| 方法类型:DELETE 
+2017-12-17 21:35:20,727 | INFO  [http-nio-8081-exec-4] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:35:20,728 | INFO  [http-nio-8081-exec-4] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.delete 
+2017-12-17 21:35:20,729 | INFO  [http-nio-8081-exec-4] com.example.component.MethodAspect [66] -| 请求入参:OHW3Q3fvC5KyFUjN6U5G  
+2017-12-17 21:35:20,788 | INFO  [http-nio-8081-exec-4] com.example.component.MethodAspect [72] -| 返回值：{"err_info":"删除用户信息成功","err_no":0,"data":null} 
+2017-12-17 21:35:20,788 | INFO  [http-nio-8081-exec-4] com.example.component.MethodAspect [81] -| 程序执行时间：62 
+2017-12-17 21:35:24,209 | INFO  [http-nio-8081-exec-5] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:35:24,210 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/user 
+2017-12-17 21:35:24,211 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [56] -| 方法类型:GET 
+2017-12-17 21:35:24,211 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:35:24,212 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.getUser 
+2017-12-17 21:35:24,212 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [66] -| 请求入参: 
+2017-12-17 21:35:24,216 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [72] -| 返回值：{"err_info":"查询用户列表成功","err_no":0,"data":[{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0},{"id":"h6spYYz1Au6C93pOVs9O","name":"测试数据","birthday":"2011-01-01","money":12000.0},{"id":"i5675ch3fvd1zq2VRo30","name":"坎坎坷坷扩","birthday":"2017-11-19","money":145678.0}]} 
+2017-12-17 21:35:24,217 | INFO  [http-nio-8081-exec-5] com.example.component.MethodAspect [81] -| 程序执行时间：7 
+2017-12-17 21:35:40,541 | INFO  [http-nio-8081-exec-6] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:35:40,543 | INFO  [http-nio-8081-exec-6] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/user/i5675ch3fvd1zq2VRo30 
+2017-12-17 21:35:40,544 | INFO  [http-nio-8081-exec-6] com.example.component.MethodAspect [56] -| 方法类型:DELETE 
+2017-12-17 21:35:40,544 | INFO  [http-nio-8081-exec-6] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:35:40,544 | INFO  [http-nio-8081-exec-6] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.delete 
+2017-12-17 21:35:40,545 | INFO  [http-nio-8081-exec-6] com.example.component.MethodAspect [66] -| 请求入参:i5675ch3fvd1zq2VRo30  
+2017-12-17 21:35:40,550 | INFO  [http-nio-8081-exec-6] com.example.component.MethodAspect [72] -| 返回值：{"err_info":"删除用户信息成功","err_no":0,"data":null} 
+2017-12-17 21:35:40,551 | INFO  [http-nio-8081-exec-6] com.example.component.MethodAspect [81] -| 程序执行时间：8 
+2017-12-17 21:35:43,961 | INFO  [http-nio-8081-exec-7] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:35:43,962 | INFO  [http-nio-8081-exec-7] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/user 
+2017-12-17 21:35:43,963 | INFO  [http-nio-8081-exec-7] com.example.component.MethodAspect [56] -| 方法类型:GET 
+2017-12-17 21:35:43,963 | INFO  [http-nio-8081-exec-7] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:35:43,964 | INFO  [http-nio-8081-exec-7] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.getUser 
+2017-12-17 21:35:43,964 | INFO  [http-nio-8081-exec-7] com.example.component.MethodAspect [66] -| 请求入参: 
+2017-12-17 21:35:43,979 | INFO  [http-nio-8081-exec-7] com.example.component.MethodAspect [72] -| 返回值：{"err_info":"查询用户列表成功","err_no":0,"data":[{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0},{"id":"h6spYYz1Au6C93pOVs9O","name":"测试数据","birthday":"2011-01-01","money":12000.0}]} 
+2017-12-17 21:35:43,980 | INFO  [http-nio-8081-exec-7] com.example.component.MethodAspect [81] -| 程序执行时间：18 
+2017-12-17 21:36:00,270 | INFO  [http-nio-8081-exec-8] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:36:00,271 | INFO  [http-nio-8081-exec-8] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/user/h6spYYz1Au6C93pOVs9O 
+2017-12-17 21:36:00,272 | INFO  [http-nio-8081-exec-8] com.example.component.MethodAspect [56] -| 方法类型:DELETE 
+2017-12-17 21:36:00,273 | INFO  [http-nio-8081-exec-8] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:36:00,273 | INFO  [http-nio-8081-exec-8] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.delete 
+2017-12-17 21:36:00,274 | INFO  [http-nio-8081-exec-8] com.example.component.MethodAspect [66] -| 请求入参:h6spYYz1Au6C93pOVs9O  
+2017-12-17 21:36:00,280 | INFO  [http-nio-8081-exec-8] com.example.component.MethodAspect [72] -| 返回值：{"err_info":"删除用户信息成功","err_no":0,"data":null} 
+2017-12-17 21:36:00,280 | INFO  [http-nio-8081-exec-8] com.example.component.MethodAspect [81] -| 程序执行时间：9 
+2017-12-17 21:36:02,815 | INFO  [http-nio-8081-exec-9] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:36:02,817 | INFO  [http-nio-8081-exec-9] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/user 
+2017-12-17 21:36:02,818 | INFO  [http-nio-8081-exec-9] com.example.component.MethodAspect [56] -| 方法类型:GET 
+2017-12-17 21:36:02,819 | INFO  [http-nio-8081-exec-9] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:36:02,820 | INFO  [http-nio-8081-exec-9] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.getUser 
+2017-12-17 21:36:02,820 | INFO  [http-nio-8081-exec-9] com.example.component.MethodAspect [66] -| 请求入参: 
+2017-12-17 21:36:02,824 | INFO  [http-nio-8081-exec-9] com.example.component.MethodAspect [72] -| 返回值：{"err_info":"查询用户列表成功","err_no":0,"data":[{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0}]} 
+2017-12-17 21:36:02,825 | INFO  [http-nio-8081-exec-9] com.example.component.MethodAspect [81] -| 程序执行时间：8 
+2017-12-17 21:36:50,092 | INFO  [localhost-startStop-2] com.example.component.CrossFilter [72] -| *********************************过滤器被销毁************************** 
+2017-12-17 21:36:50,094 | INFO  [localhost-startStop-2] com.example.component.GlobalListener [49] -| -----------------监听器销毁----------------- 
+2017-12-17 21:36:54,887 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 2984 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2017-12-17 21:36:54,913 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: mysql 
+2017-12-17 21:36:58,826 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [32] -| -----------------监听器初始化----------------- 
+2017-12-17 21:36:58,829 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [40] -| 项目部署路径: /Users/guxiaqing/Documents/ideaDir/demo/ 
+2017-12-17 21:36:58,829 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [41] -| 当前操作系统: Mac OS X 10.13.2 
+2017-12-17 21:36:58,829 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [42] -| 当前进程号: 2984 
+2017-12-17 21:36:58,830 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [43] -| JDK 版本: 1.8.0_152 
+2017-12-17 21:36:58,873 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [47] -| {"filterDef":{"filterClass":"com.example.component.CrossFilter","filterName":"crossFilter","parameters":{},"asyncSupported":"true"}} 
+2017-12-17 21:36:58,874 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [48] -| *********************************过滤器初始化************************** 
+2017-12-17 21:37:01,396 | INFO  [restartedMain] com.example.Application [57] -| Started Application in 7.558 seconds (JVM running for 9.05) 
+2017-12-17 21:37:22,029 | INFO  [http-nio-8081-exec-2] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:37:22,063 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/jsonp/test123 
+2017-12-17 21:37:22,065 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [56] -| 方法类型:GET 
+2017-12-17 21:37:22,066 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:37:22,067 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.jsonp 
+2017-12-17 21:37:22,067 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [66] -| 请求入参:test123  
+2017-12-17 21:37:22,540 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [72] -| 返回值：test123([{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0}]) 
+2017-12-17 21:37:22,541 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [81] -| 程序执行时间：481 
+2017-12-17 21:38:42,895 | INFO  [localhost-startStop-2] com.example.component.CrossFilter [72] -| *********************************过滤器被销毁************************** 
+2017-12-17 21:38:42,897 | INFO  [localhost-startStop-2] com.example.component.GlobalListener [49] -| -----------------监听器销毁----------------- 
+2017-12-17 21:38:48,166 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 2994 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2017-12-17 21:38:48,195 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: mysql 
+2017-12-17 21:38:52,259 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [32] -| -----------------监听器初始化----------------- 
+2017-12-17 21:38:52,262 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [40] -| 项目部署路径: /Users/guxiaqing/Documents/ideaDir/demo/ 
+2017-12-17 21:38:52,263 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [41] -| 当前操作系统: Mac OS X 10.13.2 
+2017-12-17 21:38:52,263 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [42] -| 当前进程号: 2994 
+2017-12-17 21:38:52,263 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [43] -| JDK 版本: 1.8.0_152 
+2017-12-17 21:38:52,306 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [47] -| {"filterDef":{"filterClass":"com.example.component.CrossFilter","filterName":"crossFilter","parameters":{},"asyncSupported":"true"}} 
+2017-12-17 21:38:52,306 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [48] -| *********************************过滤器初始化************************** 
+2017-12-17 21:38:54,952 | INFO  [restartedMain] com.example.Application [57] -| Started Application in 7.868 seconds (JVM running for 9.309) 
+2017-12-17 21:38:57,423 | INFO  [http-nio-8081-exec-1] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:38:57,452 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/jsonp/test123 
+2017-12-17 21:38:57,453 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [56] -| 方法类型:GET 
+2017-12-17 21:38:57,454 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:38:57,454 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.jsonp 
+2017-12-17 21:38:57,454 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [66] -| 请求入参:test123  
+2017-12-17 21:38:58,106 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [72] -| 返回值：test123([{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0}]) 
+2017-12-17 21:38:58,107 | INFO  [http-nio-8081-exec-1] com.example.component.MethodAspect [81] -| 程序执行时间：657 
+2017-12-17 21:39:17,348 | INFO  [localhost-startStop-2] com.example.component.CrossFilter [72] -| *********************************过滤器被销毁************************** 
+2017-12-17 21:39:17,350 | INFO  [localhost-startStop-2] com.example.component.GlobalListener [49] -| -----------------监听器销毁----------------- 
+2017-12-17 21:39:21,869 | INFO  [restartedMain] com.example.Application [48] -| Starting Application on William.local with PID 2997 (/Users/guxiaqing/Documents/ideaDir/demo/out/production/classes started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2017-12-17 21:39:21,967 | INFO  [restartedMain] com.example.Application [597] -| The following profiles are active: mysql 
+2017-12-17 21:39:25,772 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [32] -| -----------------监听器初始化----------------- 
+2017-12-17 21:39:25,775 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [40] -| 项目部署路径: /Users/guxiaqing/Documents/ideaDir/demo/ 
+2017-12-17 21:39:25,775 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [41] -| 当前操作系统: Mac OS X 10.13.2 
+2017-12-17 21:39:25,776 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [42] -| 当前进程号: 2997 
+2017-12-17 21:39:25,776 | INFO  [localhost-startStop-1] com.example.component.GlobalListener [43] -| JDK 版本: 1.8.0_152 
+2017-12-17 21:39:25,822 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [47] -| {"filterDef":{"filterClass":"com.example.component.CrossFilter","filterName":"crossFilter","parameters":{},"asyncSupported":"true"}} 
+2017-12-17 21:39:25,822 | INFO  [localhost-startStop-1] com.example.component.CrossFilter [48] -| *********************************过滤器初始化************************** 
+2017-12-17 21:39:27,878 | INFO  [restartedMain] com.example.Application [57] -| Started Application in 6.991 seconds (JVM running for 8.46) 
+2017-12-17 21:39:32,509 | INFO  [http-nio-8081-exec-2] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:39:32,538 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/user 
+2017-12-17 21:39:32,543 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [56] -| 方法类型:GET 
+2017-12-17 21:39:32,546 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:39:32,547 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.getUser 
+2017-12-17 21:39:32,550 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [66] -| 请求入参: 
+2017-12-17 21:39:33,071 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [72] -| 返回值：{"err_info":"查询用户列表成功","err_no":0,"data":[{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0}]} 
+2017-12-17 21:39:33,072 | INFO  [http-nio-8081-exec-2] com.example.component.MethodAspect [81] -| 程序执行时间：537 
+2017-12-17 21:39:37,974 | INFO  [http-nio-8081-exec-3] com.example.component.CrossFilter [55] -| *********************************过滤器被使用************************** 
+2017-12-17 21:39:37,978 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [55] -| 请求url:http://localhost:8081/userController/user 
+2017-12-17 21:39:37,979 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [56] -| 方法类型:GET 
+2017-12-17 21:39:37,979 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [57] -| ip:0:0:0:0:0:0:0:1 
+2017-12-17 21:39:37,980 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [58] -| 请求方法名:com.example.controller.UserController.getUser 
+2017-12-17 21:39:37,981 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [66] -| 请求入参: 
+2017-12-17 21:39:37,986 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [72] -| 返回值：{"err_info":"查询用户列表成功","err_no":0,"data":[{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0}]} 
+2017-12-17 21:39:37,987 | INFO  [http-nio-8081-exec-3] com.example.component.MethodAspect [81] -| 程序执行时间：9 
+2017-12-17 21:39:45,977 | INFO  [localhost-startStop-2] com.example.component.CrossFilter [72] -| *********************************过滤器被销毁************************** 
+2017-12-17 21:39:45,979 | INFO  [localhost-startStop-2] com.example.component.GlobalListener [49] -| -----------------监听器销毁----------------- 

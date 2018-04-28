@@ -1,0 +1,46 @@
+2018-01-26 13:03:23,689 | INFO  [main] com.example.controller.TestUserController [48] -| Starting TestUserController on William.local with PID 9834 (started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2018-01-26 13:03:23,708 | INFO  [main] com.example.controller.TestUserController [597] -| The following profiles are active: local 
+2018-01-26 13:03:25,763 | INFO  [main] com.example.datasource.MysqlConfig [69] -| 创建 mysql 数据源 
+2018-01-26 13:03:26,355 | INFO  [main] com.example.datasource.OracleConfig [66] -| 创建 oracle 数据源 
+2018-01-26 13:03:27,890 | INFO  [main] com.example.controller.TestUserController [57] -| Started TestUserController in 5.085 seconds (JVM running for 7.376) 
+2018-01-26 13:03:27,962 | INFO  [main] com.example.test.BaseTest [62] -| 端口号:-1 
+2018-01-26 13:03:27,963 | INFO  [main] com.example.test.BaseTest [63] -| 当前使用配置文件:/ 
+2018-01-26 13:03:28,049 | INFO  [main] com.example.component.MethodAspect [52] -| 请求url: http://127.0.0.1:8081/userController/user/1f100f189n1aoo2gl4ho00rxes9149 
+2018-01-26 13:03:28,051 | INFO  [main] com.example.component.MethodAspect [53] -| 方法类型: GET 
+2018-01-26 13:03:28,052 | INFO  [main] com.example.component.MethodAspect [54] -| ip: 127.0.0.1 
+2018-01-26 13:03:28,053 | INFO  [main] com.example.component.MethodAspect [55] -| 请求方法名: com.example.controller.UserController.getById 
+2018-01-26 13:03:28,053 | INFO  [main] com.example.component.MethodAspect [63] -| 请求入参: 1f100f189n1aoo2gl4ho00rxes9149  
+2018-01-26 13:03:28,780 | INFO  [main] com.example.component.MethodAspect [69] -| 返回值：{"err_info":"查询单个用户信息成功","err_no":0,"data":{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0}} 
+2018-01-26 13:03:28,781 | INFO  [main] com.example.component.MethodAspect [79] -| 程序执行时间：734 
+2018-01-26 13:03:28,797 | INFO  [main] com.example.test.BaseTest [109] -| 请求状态: 200 
+2018-01-26 13:03:28,798 | INFO  [main] com.example.test.BaseTest [110] -| 返回结果: {"err_info":"查询单个用户信息成功","err_no":0,"data":{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0}} 
+2018-01-26 17:04:48,962 | INFO  [main] com.example.controller.TestUserController [48] -| Starting TestUserController on William.local with PID 11940 (started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2018-01-26 17:04:48,979 | INFO  [main] com.example.controller.TestUserController [597] -| The following profiles are active: local 
+2018-01-26 17:04:50,931 | INFO  [main] com.example.datasource.MysqlConfig [69] -| 创建 mysql 数据源 
+2018-01-26 17:04:51,463 | INFO  [main] com.example.datasource.OracleConfig [66] -| 创建 oracle 数据源 
+2018-01-26 17:04:52,925 | INFO  [main] com.example.controller.TestUserController [57] -| Started TestUserController in 5.017 seconds (JVM running for 6.193) 
+2018-01-26 17:04:52,984 | INFO  [main] com.example.test.BaseTest [63] -| 端口号:-1 
+2018-01-26 17:04:52,984 | INFO  [main] com.example.test.BaseTest [64] -| 当前使用配置文件:/ 
+2018-01-26 17:04:53,043 | INFO  [main] com.example.component.MethodAspect [52] -| 请求url: http://127.0.0.1:8081/userController/user/ 
+2018-01-26 17:04:53,044 | INFO  [main] com.example.component.MethodAspect [53] -| 方法类型: GET 
+2018-01-26 17:04:53,045 | INFO  [main] com.example.component.MethodAspect [54] -| ip: 127.0.0.1 
+2018-01-26 17:04:53,045 | INFO  [main] com.example.component.MethodAspect [55] -| 请求方法名: com.example.controller.UserController.getUser 
+2018-01-26 17:04:53,045 | INFO  [main] com.example.component.MethodAspect [63] -| 请求入参:  
+2018-01-26 17:04:53,599 | INFO  [main] com.example.component.MethodAspect [69] -| 返回值：{"err_info":"查询用户列表成功","err_no":0,"data":[{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0}]} 
+2018-01-26 17:04:53,600 | INFO  [main] com.example.component.MethodAspect [79] -| 程序执行时间：558 
+2018-01-26 17:04:53,614 | INFO  [main] com.example.test.BaseTest [110] -| 请求状态: 200 
+2018-01-26 17:04:53,615 | INFO  [main] com.example.test.BaseTest [111] -| 返回结果: {"err_info":"查询用户列表成功","err_no":0,"data":[{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0}]} 
+2018-01-26 17:07:42,154 | INFO  [main] com.example.controller.TestUserController [48] -| Starting TestUserController on William.local with PID 11950 (started by guxiaqing in /Users/guxiaqing/Documents/ideaDir/demo) 
+2018-01-26 17:07:42,169 | INFO  [main] com.example.controller.TestUserController [597] -| The following profiles are active: local 
+2018-01-26 17:07:44,196 | INFO  [main] com.example.datasource.MysqlConfig [69] -| 创建 mysql 数据源 
+2018-01-26 17:07:44,713 | INFO  [main] com.example.datasource.OracleConfig [66] -| 创建 oracle 数据源 
+2018-01-26 17:07:46,215 | INFO  [main] com.example.controller.TestUserController [57] -| Started TestUserController in 5.281 seconds (JVM running for 6.568) 
+2018-01-26 17:07:46,272 | INFO  [main] com.example.test.BaseTest [64] -| 端口号:-1 
+2018-01-26 17:07:46,272 | INFO  [main] com.example.test.BaseTest [65] -| 当前使用配置文件:/ 
+2018-01-26 17:07:46,329 | INFO  [main] com.example.component.MethodAspect [52] -| 请求url: http://127.0.0.1:8081/userController/user/ 
+2018-01-26 17:07:46,331 | INFO  [main] com.example.component.MethodAspect [53] -| 方法类型: GET 
+2018-01-26 17:07:46,331 | INFO  [main] com.example.component.MethodAspect [54] -| ip: 127.0.0.1 
+2018-01-26 17:07:46,332 | INFO  [main] com.example.component.MethodAspect [55] -| 请求方法名: com.example.controller.UserController.getUser 
+2018-01-26 17:07:46,332 | INFO  [main] com.example.component.MethodAspect [63] -| 请求入参:  
+2018-01-26 17:07:46,894 | INFO  [main] com.example.component.MethodAspect [69] -| 返回值：{"err_info":"查询用户列表成功","err_no":0,"data":[{"id":"1f100f189n1aoo2gl4ho00rxes9149","name":"李四","birthday":"2016-01-01","money":120000.0},{"id":"1fd70x13wad01ftz9x70ph625ugdbj","name":"张三","birthday":"2017-03-14","money":150000.0},{"id":"28s6lkhkhu12f36s8pcy919jv32q56","name":"小伙伴","birthday":"2017-10-09","money":180000.0},{"id":"eaced11h95g1gp0hciymjdoyco6pyt","name":"日了狗了","birthday":"2016-01-01","money":350000.0}]} 
+2018-01-26 17:07:46,896 | INFO  [main] com.example.component.MethodAspect [79] -| 程序执行时间：569 

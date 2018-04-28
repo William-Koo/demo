@@ -1,0 +1,60 @@
+debug: true
+
+spring:
+  http:
+    converters:
+      preferred-json-mapper: gson
+  jackson:
+    default-property-inclusion: non_null
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+
+global:
+  mybatis-config: mybatis-config.xml
+  alias-model: com.example.model
+
+#spring 配置
+
+mysql:
+  url: jdbc:mysql://localhost:3306/test?useUnicode=true&useSSL=false&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+  username: root
+  password: mm1234
+  driver-class-name: com.mysql.cj.jdbc.Driver
+
+oracle:
+  url: jdbc:oracle:thin:@localhost:1521:xe
+  username: sys as SYSDBA
+  password: oracle
+  driver-class-name: oracle.jdbc.driver.OracleDriver
+
+
+
+#mybatis:
+#  type-aliases-package: com.example.model
+#  config-locations: classpath:mybatis-config.xml
+#  mapper-locations: classpath:mapper/**/*Mapper.xml
+
+
+#server
+server:
+  port: 8081
+  servlet:
+    context-path: /
+  tomcat:
+    uri-encoding: utf-8
+    max-threads: 100
+
+#log
+logging:
+  config: classpath:logback-spring-local.xml
+
+#分页
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+
+#自定义属性
+cross:
+  url: http://localhost:8081
