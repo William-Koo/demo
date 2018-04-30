@@ -10,6 +10,14 @@ spring:
     restart:
       enabled: true
       additional-paths: src/main/java
+  mail:
+    host: smtp.163.com
+    username: william_koo@yeah.net
+    password: qwerty1234
+    properties:
+      smtp:
+        auth: true
+        timeout: 25000
 
 global:
   mybatis-config: mybatis-config.xml
@@ -49,6 +57,7 @@ server:
 #log
 logging:
   config: classpath:logback-spring-local.xml
+
 
 #分页
 pagehelper:
