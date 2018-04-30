@@ -9,6 +9,7 @@ buildscript {
 		GSON_VERSION = '2.8.2'
 		PAGEHELPER_VERSION ='1.2.3'
 		SHIRO_VERSION = '1.4.0'
+		MAIL_VERSION = '1.4.7'
 	}
 
 	repositories {
@@ -66,6 +67,8 @@ dependencies {
 			"org.apache.shiro:shiro-ehcache:${SHIRO_VERSION}",
 			"org.apache.shiro:shiro-spring:${SHIRO_VERSION}"
 	)
+
+	compile('org.springframework.boot:spring-boot-starter-mail')
 
 	testCompile('org.springframework.boot:spring-boot-starter-test'){
 		exclude(module: 'commons-logging')
